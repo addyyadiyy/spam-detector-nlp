@@ -3,7 +3,7 @@ import pickle
 
 # Load model
 model = pickle.load(
-    open("spam_model.pkl", "rb")
+    open("spam_model_nb.pkl", "rb")
 )
 
 # Load vectorizer
@@ -31,7 +31,22 @@ if st.button("Analyze"):
         transformed_message
     )
 
+    probability = model.predict_proba(
+        transformed_message
+    )
+
+    confidence = max(
+        probability[0]
+    ) * 100
+
     if prediction[0] == 1:
-        st.error("🚨 SPAM")
+
+        st.error(
+            f"🚨 SPAM\n\nConfidence: {confidence:.2f}%"
+        )
+
     else:
-        st.success("✅ NOT SPAM")
+
+        st.success(
+            f"✅ NOT SPAM\n\nConfidence: {confidence:.2f}%"
+        )
