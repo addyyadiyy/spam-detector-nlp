@@ -5,7 +5,7 @@ GitHub Repository:
 https://github.com/addyyadiyy/spam-detector-nlp
 
 Streamlit Application:
-https://your-app-name.streamlit.app
+https://spam-detector-nlp.streamlit.app/
 
 # Email Spam Detector
 
