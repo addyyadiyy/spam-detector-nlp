@@ -1,6 +1,12 @@
 # spam-detector-nlp
 Email Spam Detection NLP Project
 
+GitHub Repository:
+https://github.com/addyyadiyy/spam-detector-nlp
+
+Streamlit Application:
+https://your-app-name.streamlit.app
+
 # Email Spam Detector
 
 ## Project Overview
