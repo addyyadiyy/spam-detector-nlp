@@ -18,11 +18,9 @@ The project demonstrates the complete NLP workflow, including text preprocessing
 ## Dataset
 
 SMS Spam Collection Dataset
-
-SMS Spam Collection Dataset
-Total Messages: 5,572
-Ham Messages: 4,825
-Spam Messages: 747
+* Total Messages: 5,572
+* Ham Messages: 4,825
+* Spam Messages: 747
 
 The dataset contains real SMS messages labeled as either spam or ham and is widely used for text classification research.
 
@@ -48,10 +46,10 @@ The dataset contains real SMS messages labeled as either spam or ham and is wide
 
 ## Model Comparison
 
-BoW + Naive Bayes
-BoW + KNN
-TF-IDF + Naive Bayes
-TF-IDF + KNN
+* BoW + Naive Bayes
+* BoW + KNN
+* TF-IDF + Naive Bayes
+* TF-IDF + KNN
 
 ## Performance was evaluated using:
 
