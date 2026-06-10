@@ -11,24 +11,30 @@ https://spam-detector-nlp.streamlit.app/
 
 ## Project Overview
 
-This project develops an Email Spam Detection system using Natural Language Processing (NLP) and Machine Learning techniques. The system classifies messages as Spam or Ham (Not Spam).
+This project develops an Email Spam Detection System using Natural Language Processing (NLP) and Machine Learning techniques. The system automatically classifies messages as either Spam or Ham (Not Spam) based on their textual content.
+
+The project demonstrates the complete NLP workflow, including text preprocessing, feature extraction, model training, evaluation, and comparison of multiple machine learning approaches.
 
 ## Dataset
 
 SMS Spam Collection Dataset
 
-* Total Messages: 5572
-* Ham Messages: 4825
-* Spam Messages: 747
+SMS Spam Collection Dataset
+Total Messages: 5,572
+Ham Messages: 4,825
+Spam Messages: 747
+
+The dataset contains real SMS messages labeled as either spam or ham and is widely used for text classification research.
 
 ## NLP Techniques
 
 ### Text Preprocessing
 
-* Lowercase conversion
-* Special character removal
-* Stopword removal
-* Stemming
+- Lowercase conversion
+- Removal of punctuation and special characters
+- Tokenization
+- Stopword removal
+- Stemming using Porter Stemmer
 
 ### Feature Extraction
 
@@ -38,25 +44,29 @@ SMS Spam Collection Dataset
 ### Classification Models
 
 1. Naive Bayes
-2. Support Vector Machine (SVM)
+2. K-Nearest Neighbors (KNN)
 
-## Results
+## Model Comparison
 
-| Model       | Accuracy |
-| ----------- | -------- |
-| Naive Bayes | 98.21%   |
-| SVM         | 98.21%   |
+BoW + Naive Bayes
+BoW + KNN
+TF-IDF + Naive Bayes
+TF-IDF + KNN
 
-## Technologies Used
+## Performance was evaluated using:
 
-* Python
-* Google Colab
-* Scikit-learn
-* NLTK
-* Pandas
-* Matplotlib
-* Streamlit
+* Accuracy
+* Precision
+* Recall
+* F1-Score
+* Confusion Matrix
 
-## Author
+## Visualizations
 
-SAIA2163 NLP Final Project
+* Spam vs Ham Distribution
+* Spam Word Cloud
+* Ham Word Cloud
+* Top 20 Spam Indicator Words
+* Model Accuracy Comparison
+* Confusion Matrix of Best Model
+* Performance Metrics Comparison (Accuracy, Precision, Recall, F1-Score)
