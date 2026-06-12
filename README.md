@@ -64,7 +64,7 @@ The dataset contains real SMS messages labeled as either spam or ham and is wide
 * Spam vs Ham Distribution
 * Spam Word Cloud
 * Ham Word Cloud
-* Top 20 Words
+* Top 20 Most Frequent Words
 * Model Accuracy Comparison
 * Confusion Matrix of Best Model
 * Performance Metrics Comparison (Accuracy, Precision, Recall, F1-Score)
