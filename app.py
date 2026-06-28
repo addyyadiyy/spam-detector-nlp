@@ -487,7 +487,7 @@ elif page == "🔍 Text Analyzer":
         with col_btn2:
             clear = st.button("🗑️ Clear")
         if clear:
-            st.session_state.message_input = True
+            st.session_state.clear_input = True
             st.rerun()
 
 
