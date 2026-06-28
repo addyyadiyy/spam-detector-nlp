@@ -341,7 +341,8 @@ if "history" not in st.session_state:
     st.session_state.history = []
 if "message_input" not in st.session_state:
     st.session_state.message_input = ""
-
+if "clear_input" not in st.session_state:
+    st.session_state.clear_input = False
 
 # ─────────────────────────────────────────
 # SIDEBAR
@@ -470,6 +471,9 @@ elif page == "🔍 Text Analyzer":
     col1, col2 = st.columns([2, 1])
 
     with col1:
+        if st.session_state.clear_input:
+            st.session_state.message_input = ""
+            st.session_state.clear_input = False
         message = st.text_area(
             "✉️ Your Message",
             placeholder="e.g. Congratulations! You've won a FREE prize. Call now to claim...",
@@ -483,7 +487,7 @@ elif page == "🔍 Text Analyzer":
         with col_btn2:
             clear = st.button("🗑️ Clear")
         if clear:
-            st.session_state.message_input = ""
+            st.session_state.message_input = True
             st.rerun()
 
 
